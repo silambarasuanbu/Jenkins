@@ -1,0 +1,12 @@
+- hosts: 
+  become: true
+  become_user: root
+  vars:
+      users_name:
+        - vijaykumar
+  tasks:
+   - name: To add a user account in linux
+     user:
+       name: "{{ item }}"
+       state: present
+     loop: "{{ users_name }}"

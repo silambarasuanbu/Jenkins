@@ -1,2 +1,0 @@
-echo "hostname : $hostname"
-echo "IP address: $(hostname -I)"
